@@ -3,7 +3,7 @@ Script to install [lggr.io](https://lggr.io/) on a FRESH and CLEAN Debian 10 Ser
 
 ### install
 ```
-$ wget https://git.bachmann-lan.de/michael/install-script_lggr.io/raw/branch/master/install_lggr.io.sh
+$ wget https://raw.githubusercontent.com/mbachmann-lan/install-script_lggr.io/master/install_lggr.io.sh
 $ chmod +x install_lggr.io.sh
 $ ./install_lggr.io.sh
 ```
