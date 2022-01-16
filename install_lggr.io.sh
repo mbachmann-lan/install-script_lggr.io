@@ -1,9 +1,10 @@
 #!/bin/bash
 #######################################################################
 #                                                                     #
-# Script to install lggr.io on a FRESH and CLEAN Debian 10 Server.    #
+# Script to install lggr.io on a FRESH and CLEAN Debian 11 Server.    #
 # Adjust the Variables section to your needs, or leave the defaults.  #
 #                                                                     #
+# rev 1.1 - 16.01.2022 ~ lggr.io@bachmann-lan.de                      #
 # rev 1.0 - 02.01.2021 ~ lggr.io@bachmann-lan.de                      #
 #                                                                     #
 #######################################################################
@@ -76,7 +77,7 @@ apt-get update && apt-get upgrade -y
 # install all required packages
 header
 echo -e $white*$green install all required packages$reset
-apt install -y apache2 mariadb-server mariadb-client php7.3 php7.3-cli php7.3-mysql php-redis redis-server syslog-ng libdbd-mysql wget git
+apt install -y apache2 mariadb-server mariadb-client php7.4 php7.4-cli php7.4-mysql php-redis redis-server syslog-ng libdbd-mysql wget git
 
 #######################################################################
 # add de_DE and update locales                                              #
@@ -95,8 +96,8 @@ header
 echo -e $white*$green Apache and  PHP$reset
 
 # set date and timezone
-sed -i -e "s/^;date.timezone =/date.timezone = Europe\/Berlin/" /etc/php/7.3/apache2/php.ini
-sed -i -e "s/^;date.timezone =/date.timezone = Europe\/Berlin/" /etc/php/7.3/cli/php.ini
+sed -i -e "s/^;date.timezone =/date.timezone = Europe\/Berlin/" /etc/php/7.4/apache2/php.ini
+sed -i -e "s/^;date.timezone =/date.timezone = Europe\/Berlin/" /etc/php/7.4/cli/php.ini
 
 # create Apache configuration
 mv /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf_ORG
