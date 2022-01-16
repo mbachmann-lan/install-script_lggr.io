@@ -1,4 +1,4 @@
-# install-script_lggr.io
+# install-script_lggr.io_2018
 Script to install [lggr.io](https://lggr.io/) on a FRESH and CLEAN Debian 11 Server within minutes.  
 This installation is build from the old and archived [GitHub](https://github.com/kkretsch/lggr) Repository. (lggr.io Version 2018)
 
