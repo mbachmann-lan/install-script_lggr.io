@@ -5,8 +5,8 @@ This installation is build from the old and archived [GitHub](https://github.com
 ### install
 ```
 wget https://raw.githubusercontent.com/mbachmann-lan/install-script_lggr.io_2018/master/install_lggr.io_2018.sh
-chmod +x install_lggr.io.sh
-./install_lggr.io.sh
+chmod +x install_lggr.io_2018.sh
+./install_lggr.io_2018.sh
 ```
 
 For more information, please visit my [project homepage](https://www.bachmann-lan.de/zentraler-logserver-mit-syslog-ng-mariadb-und-lggr-io-webinterface/).
